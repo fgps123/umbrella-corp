@@ -12,12 +12,12 @@ export default async function Home() {
     <div className={styles.page}>
       <h1>Welcome to Umbrella Corporation</h1>
       {
-        responseDB.rows.map((item) => {
+        responseDB.rows.map((item) => (
           <div>
             <h3>Nome: {item.name}</h3>
             <h2>Tipo: {item.type}</h2>
           </div>
-        })
+        ))
       }
 
 
